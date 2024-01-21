@@ -2,6 +2,7 @@ import time
 
 from PyQt5.QtWidgets import QMainWindow, QPushButton, QVBoxLayout, QWidget, QLineEdit, QHBoxLayout, QMessageBox, \
     QComboBox, QCheckBox, QInputDialog
+from PyQt5.QtCore import Qt
 from functools import partial
 from pbContent import contactListData, contact
 
@@ -11,6 +12,8 @@ contactsListData = contactListData()
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
+
+        self.setWindowFlags(Qt.FramelessWindowHint)
 
         # display list variable for window
         self.filteredContacts = []
