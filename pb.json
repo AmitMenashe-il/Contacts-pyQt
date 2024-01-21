@@ -1,0 +1,47 @@
+{
+    "Contacts": [
+        {
+            "first_name": "Tag1",
+            "last_name": "1",
+            "phone_number": "",
+            "tags": [
+                "Tag1"
+            ]
+        },
+        {
+            "first_name": "Tag2",
+            "last_name": "1",
+            "phone_number": "",
+            "tags": [
+                "Tag2"
+            ]
+        },
+        {
+            "first_name": "Tag2",
+            "last_name": "2",
+            "phone_number": "",
+            "tags": [
+                "Tag2"
+            ]
+        },
+        {
+            "first_name": "Tag1",
+            "last_name": "3",
+            "phone_number": "",
+            "tags": [
+                "Tag1"
+            ]
+        },
+        {
+            "first_name": "te",
+            "last_name": "te",
+            "phone_number": "",
+            "tags": []
+        }
+    ],
+    "Tags": [
+        "Tag1",
+        "Tag2",
+        "NoOneTag"
+    ]
+}
