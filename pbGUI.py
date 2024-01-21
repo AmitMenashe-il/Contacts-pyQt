@@ -176,13 +176,13 @@ class MainWindow(QMainWindow):
         self.close()
 
     def setTextFilter(self):
-        contactsListData.textFilter = self.textFilterInputItem.text()
+        contactsListData.textFilter = self.textFilterInputItem.text().lower()
         self.close()
 
     def filterContactsListByTextAndTags(self):
         # filter by text
         for person in contactsListData.contactListPeople:
-            fullName = person.firstName + ' ' + person.lastName
+            fullName = (person.firstName + ' ' + person.lastName).lower()
             if fullName.startswith(contactsListData.textFilter):
                 self.filteredContacts.append(person)
         # filter by tag
